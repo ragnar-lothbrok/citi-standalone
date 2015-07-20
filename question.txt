@@ -1,0 +1,85 @@
+BC Pizza Company wants to build Point of Sale (POS) system for their retail outlets. Build a system which takes order from customer and prints receipt with order details, price, tax and total amount. ABC Pizza is famous of their custom pizzas. To order pizza following steps and options are available to customers.
+
+1.    Choose size (Small, Medium & Large)
+
+2.    Chooses pizza base
+
+3.    Choose sauce
+
+4.    Choose one or more toppings
+
+5.    Choose cheese
+
+Available Pizza Bases are of four types - Normal, Pan Crust, Thin Curst and Cheesy Bites. Prices for Small size Normal Crust is Rs 75, Pan Curst Rs 100, Thin Crust Rs. 100 and Cheesy Bites Rs. 125. For Medium price is increased by 25% and for large 50% from small size.
+
+Available Sauce is Margarita, Mexican Salsa. No extra charge for Sauce.
+
+Available toppings are Capsicum, Onion, Tomato, Corn, Baby Corn, Jalapeno, Black Olive, Paneer, Red Pepper. Each topping for Small size is Rs 15 and Medium Size is Rs 30 and large Size is Rs 45.
+
+Available Cheese Options are Mozzarella, Cream Cheese. Customer can ask for Double cheese. And extra charge for Double cheese is Rs 15, 30 and 45 for Small, Medium and Large sizes. Extra charge is only for double cheese.
+
+Service Tax is 5% and VAT is 6% on total order. If my order total is Rs 500 than Service Tax is Rs 25 and VAT is Rs. 30.
+
+System Requirements:
+
+1.    Kindly note that we are not expecting a UI. Simple console based application is fine.
+
+a.    System can take order input from command line or file in the ORDER format given below.
+
+b.    System should print receipt on console or file.
+
+2.    Every line item is rounded down to integer valuee.g  If pizza price is coming to 246.25 it should be rounded to 246. If service tax is 25.8 than it should be rounded down to 25.
+
+Guideline for Solution:
+
+1.    Solve using Java programming language
+
+2.    Must be working solution with following sample orders passing
+
+3.    Though the working solution is MUST and important, evaluation criteria will also depend on
+
+a.    Use of Object Oriented idioms
+
+b.    Follow clean codeprinciples like DRY, KISS, YAGNI
+
+c.     Use of design pattern
+
+d.    Automated unit tests
+
+4.    You are encouraged to use external libraries and tools e.g Junit etc.
+
+ORDER  1:
+
+Large|Pan|Margarita|Capsicum,Onion,Jalapeno|Mozzarella
+Small|Normal|Margarita|Paneer,Onion,Jalapeno|Mozzarella,Double
+
+RECEIPT 1:
+
+Large|Pan|Margarita|Capsicum,Onion,Jalapeno|Mozzarella                                 285
+Small|Normal|Margarita|Paneer,Onion,Jalapeno|Mozzarella,Double         135
+Order Total                                                                                                                   420
+Service Tax (5%)                                                                                                                        21
+VAT (6%)                                                                                                                                   25
+Total                                                                                                                                         466                                                                                                                              
+
+One sample calculation explanation:
+
+Large Pizza (50% extra) with Pan crust (Rs 100) = Rs 150
+3 toppings for large pizza (45 * 3) = Rs 135
+First Pizza Cost = Rs. 285
+
+ 
+
+ORDER  2:
+
+Medium|Cheesy Bites|Margarita|Paneer,Onion,Tomato|Mozzarella
+Small|Thin|Mexican Salsa|Onion,Red Pepper|Cream Cheese
+
+RECEIPT 2:
+
+Medium|Cheesy Bites|Margarita|Paneer,Onion,Tomato|Mozzarella            246
+Small|Thin|Mexican Salsa|Onion,Red Pepper|Cream Cheese                                130
+Order Total                                                                                                                   376
+Service Tax (5%)                                                                                                                        18
+VAT (6%)                                                                                                                                   22
+Total                                                                      416
